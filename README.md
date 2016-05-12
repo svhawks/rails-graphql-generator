@@ -1,4 +1,4 @@
-# Rails Graph Generator
+# Rails GraphQL Generator
 
 *A GraphQL Relay schema created by reflection over a Rails models*
 
