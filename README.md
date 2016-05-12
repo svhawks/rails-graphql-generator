@@ -26,7 +26,7 @@ rails g graphql User
 
 and start server [http://localhost:3000/graphiql](http://localhost:3000/graphiql)
 
-Check out the **[example][]** for a demo of Rails GraphQL Generator in action.
+Check out the **[example][https://github.com/movielala/rails-graphql-generator-demo]** for a demo of Rails GraphQL Generator in action.
 
 ## Road Map
 
