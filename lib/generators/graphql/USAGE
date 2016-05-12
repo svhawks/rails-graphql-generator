@@ -1,0 +1,9 @@
+Description:
+
+
+Example:
+    rails generate graphql Model
+
+    This will create:
+        app/graphql/types/model_type.rb
+        app/graphql/mutations/model_.rb
