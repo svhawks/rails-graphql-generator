@@ -1,5 +1,7 @@
 # Rails GraphQL Generator
 
+[![Code Climate](https://codeclimate.com/github/movielala/rails-graphql-generator/badges/gpa.svg)](https://codeclimate.com/github/movielala/rails-graphql-generator)
+
 *A GraphQL Relay schema created by reflection over a Rails models*
 
 ## Demo
