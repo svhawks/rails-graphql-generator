@@ -9,7 +9,7 @@ class GraphQlController < ApplicationController
       variables = params[:variables]
     end
 
-    render json: GraphQL::Query.new(RelaySchema, params[:query], variables: variables, debug: true).result
+    render json: GraphQL::Query.new(RelaySchema, params[:query], variables: variables).result
   end
 
 end
