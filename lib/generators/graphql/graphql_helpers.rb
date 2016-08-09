@@ -57,8 +57,7 @@ end
 
           begin
             if models.include? association_klass.classify.constantize
-              if circular_finder[model.to_s].include? association_klass || association_klass == model.to_s
-                inject_into_file type_path(model), before: "# End of fields\n" do <<-FILE
+              inject_into_file type_path(model), before: "# End of fields\n" do <<-FILE
   field :#{ast.to_s} do
     type -> { #{model.reflect_on_association(ast).class_name}Type }
 
@@ -67,19 +66,7 @@ end
     }
   end
 
-                FILE
-                end
-              else
-                inject_into_file type_path(model), before: "# End of fields\n" do <<-FILE
-  field :#{ast.to_s} do
-    type -> #{model.reflect_on_association(ast).class_name}Type
-
-    resolve -> (#{singular_route_key(model)}, args, ctx) {
-      #{singular_route_key(model)}.#{ast.to_s}
-    }
-  end
-                FILE
-                end
+              FILE
               end
             end
           rescue => ex
