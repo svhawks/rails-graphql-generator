@@ -4,8 +4,7 @@ module Graphql
       source_root File.expand_path('../templates', __FILE__)
 
       def add_gems
-        gem 'graphql'
-        gem 'graphql-relay'
+        gem 'graphql'        
         gem 'graphiql-rails'
         gem 'graphql-formatter'
       end
@@ -36,4 +35,3 @@ module Graphql
     end
   end
 end
-

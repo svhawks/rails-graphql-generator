@@ -1,5 +1,7 @@
 RelaySchema = GraphQL::Schema.new(query: QueryType, mutation: MutationType)
 
+RelaySchema.node_identification = NodeIdentification
+
 module RelaySchemaHelpers
   SCHEMA_DIR  = Rails.root.join('app/assets/javascripts/relay/')
   SCHEMA_PATH = File.join(SCHEMA_DIR, 'schema.json')
