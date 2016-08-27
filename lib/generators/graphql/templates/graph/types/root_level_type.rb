@@ -4,5 +4,5 @@ RootLevelType = GraphQL::ObjectType.define do
 
   interfaces [NodeIdentification.interface]
 
-  field :id, field: GraphQL::Relay::GlobalIdField.new('RootLevel')
+  global_id_field :id
 end

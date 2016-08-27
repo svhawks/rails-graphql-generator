@@ -27,8 +27,8 @@ module Graphql
   description '#{model.to_s} type'
 
   interfaces [NodeIdentification.interface]
-
-  field :id, field: GraphQL::Relay::GlobalIdField.new('#{model.to_s}')
+  
+  global_id_field :id
   # End of fields
 end
         FILE
@@ -41,7 +41,7 @@ end
           next if columns[k].name == 'id'
 
           if columns[k].type.present?
-            inject_into_file type_path(model), after: "field :id, field: GraphQL::Relay::GlobalIdField.new('#{model.to_s}')\n" do <<-FILE
+            inject_into_file type_path(model), after: "global_id_field :id\n" do <<-FILE
   field :#{columns[k].name}, types.#{type_mapper[columns[k].type]}
             FILE
             end
