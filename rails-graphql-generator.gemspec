@@ -3,7 +3,7 @@ $:.push File.expand_path('../lib', __FILE__)
 Gem::Specification.new do |s|
   s.licenses    = ['MIT']
   s.name        = 'rails-graphql-generator'
-  s.version     = '0.0.2'
+  s.version     = '0.1.0'
   s.authors     = ['Muhammet']
   s.email       = ['dilekmuhammet@gmail.com']
   s.homepage    = 'https://github.com/movielala/rails-graphql-generator'
