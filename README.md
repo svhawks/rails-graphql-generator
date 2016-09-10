@@ -11,7 +11,7 @@ Check out the **[example](https://github.com/movielala/rails-graphql-generator-d
 Add your Gemfile:
 
 ```bash
-gem 'rails-graphql-generator'
+gem 'rails-graphql-generator', '~> 0.1.0'
 bundle install
 ```
 
