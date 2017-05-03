@@ -1,5 +1,7 @@
 # Rails GraphQL Generator
 
+> NOTE: This project is not maintained anymore. You can use [graphql-ruby](https://github.com/rmosolgo/graphql-ruby)'s generators.
+
 [![Code Climate](https://codeclimate.com/github/movielala/rails-graphql-generator/badges/gpa.svg)](https://codeclimate.com/github/movielala/rails-graphql-generator)
 
 *A GraphQL Relay schema created by reflection over a Rails models*
